@@ -1,0 +1,161 @@
+*, html, body, div, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEE;
+}
+
+h1 {
+    float: right;
+    margin: 20px;
+    color: #A2A2A2;
+}
+
+div#warp {
+    width: 260px;
+    height: 180px;
+    left: 50%;
+    top: 30%;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: #F1F1F1;
+    position: absolute;
+    z-index: 20;
+    border: 1px dotted #635C5C;
+    box-shadow: 1px 1px #B3B3B3;
+}
+
+div#warp div#logo {
+    background: url(logo.png) 0 0 no-repeat;
+    width: 64px;
+    height: 64px;
+    margin: 30px;
+    opacity: .9;
+    float: left;
+}
+
+div#warp ul#img-list {
+    list-style: none;
+    float: left;
+    clear: left;
+}
+
+ul#img-list li.obj-opacity {
+    float: left;
+    background: url(small.png) 0 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+div#single-pic img.single {
+    margin: 30px 10px 0 5px;
+    float: left;
+}
+
+div#single-pic p {
+    font: 9px/1.25 sans-serif;
+    color: #999;
+    display: block;
+    width: 110px;
+    float: left;
+    margin: 5px;
+}
+
+/*初始化的透明度*/
+.obj-opacity {
+    opacity: .1;
+}
+
+pre {
+    width: 640px;
+    height: 430px;
+    bottom: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -320px;
+    margin-top: -200px;
+    z-index: 10;
+}
+
+.com {
+    color: #93a1a1;
+}
+
+.lit {
+    color: #195f91;
+}
+
+.pun, .opn, .clo {
+    color: #93a1a1;
+}
+
+.fun {
+    color: #dc322f;
+}
+
+.str, .atv {
+    color: #D14;
+}
+
+.kwd, .prettyprint .tag {
+    color: #1e347b;
+}
+
+.typ, .atn, .dec, .var {
+    color: teal;
+}
+
+.pln {
+    color: #48484c;
+}
+
+.prettyprint {
+    padding: 8px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+    height: 100%;
+}
+
+ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 20px;
+    width: 100%;
+}
+
+a.git{
+    background: url(git.png) 0 center no-repeat;
+    height: 60px;
+    width: 270px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 20;
+    margin: 250px 0 0 25px;
+    text-indent: 55px;
+    font-size: 16px;
+    line-height: 60px;
+    color: #587caa;
+}
+
+a.git:hover{
+    color: #207ED3;
+    font-weight: bold;
+}
