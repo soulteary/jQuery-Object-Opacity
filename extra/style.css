@@ -138,3 +138,24 @@ ol.linenums li {
     line-height: 20px;
     width: 100%;
 }
+
+a.git{
+    background: url(git.png) 0 center no-repeat;
+    height: 60px;
+    width: 270px;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 20;
+    margin: 250px 0 0 25px;
+    text-indent: 55px;
+    font-size: 16px;
+    line-height: 60px;
+    color: #587caa;
+}
+
+a.git:hover{
+    color: #207ED3;
+    font-weight: bold;
+}

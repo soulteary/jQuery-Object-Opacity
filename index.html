@@ -10,11 +10,12 @@
 </head>
 <body>
     <h1>JQUERY OBJECT OPACITY</h1>
+    <a href="https://github.com/soulteary/jQuery-Object-Opacity" class="git">查看GitHub</a>
     <div id="warp">
         <div id="logo" class="obj-opacity"></div>
         <div id="single-pic">
             <img src="extra/single.gif" class="single">
-            <p>点击我以及将鼠标从我身上移开看效果。</p>
+            <p>请不要在点我之后把鼠标从我身上移开TAT</p>
         </div>
         <ul id="img-list">
             <li class="obj-opacity"></li>
@@ -24,7 +25,6 @@
             <li class="obj-opacity"></li>
         </ul>
     </div>
-
 <pre class="prettyprint linenums">
 //对于有一堆相同属性的元素
 $('.obj-opacity').objOpacity({
@@ -47,30 +47,38 @@ $('.single').objOpacity({
     speed:600
 });
 </pre>
-    <script type="text/javascript">
-        window.prettyPrint && prettyPrint();
-        $(function(){
-            //对于有一堆相同属性的元素
-            $('.obj-opacity').objOpacity({
-                warp:'#warp',//如果不想使用事件代理,就不要使用这个参数,设置false
-                hover:'effect',
-                event:'mouseover',
-                bevent:'mouseout',
-                focus:1,
-                blur:.1,
-                speed:600
-            });
-
-            //对于只有一个属性的元素
-            $('.single').objOpacity({
-                hover:'effect',
-                event:'click',
-                bevent:'mouseout',
-                focus:1,
-                blur:.1,
-                speed:600
-            });
+<script type="text/javascript">
+    window.prettyPrint && prettyPrint();
+    $(function(){
+        //对于有一堆相同属性的元素
+        $('.obj-opacity').objOpacity({
+            warp:'#warp',//如果不想使用事件代理,就不要使用这个参数,设置false
+            hover:'effect',
+            event:'mouseover',
+            bevent:'mouseout',
+            focus:1,
+            blur:.1,
+            speed:600
         });
-    </script>
+
+        //对于只有一个属性的元素
+        $('.single').objOpacity({
+            hover:'effect',
+            event:'click',
+            bevent:'mouseout',
+            focus:1,
+            blur:.1,
+            speed:600
+        });
+    });
+
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?c23a244f162705015a79c6acee40f791";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </body>
 </html>
