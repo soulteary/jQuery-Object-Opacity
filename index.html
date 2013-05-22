@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JQUERY OBJECT OPACITY</title>
+    <link rel="stylesheet" href="extra/style.css">
+    <script type="text/javascript" src="extra/jquery.js"></script>
+    <script type="text/javascript" src="extra/jquery.object-opacity.js"></script>
+    <script type="text/javascript" src="extra/prettify.js"></script>
+</head>
+<body>
+    <h1>JQUERY OBJECT OPACITY</h1>
+    <div id="warp">
+        <div id="logo" class="obj-opacity"></div>
+        <div id="single-pic">
+            <img src="extra/single.gif" class="single">
+            <p>点击我以及将鼠标从我身上移开看效果。</p>
+        </div>
+        <ul id="img-list">
+            <li class="obj-opacity"></li>
+            <li class="obj-opacity"></li>
+            <li class="obj-opacity"></li>
+            <li class="obj-opacity"></li>
+            <li class="obj-opacity"></li>
+        </ul>
+    </div>
+
+<pre class="prettyprint linenums">
+//对于有一堆相同属性的元素
+$('.obj-opacity').objOpacity({
+    warp:'#warp',//如果不想使用事件代理,就不要使用这个参数,设置false
+    hover:'effect',
+    event:'mouseover',
+    bevent:'mouseout',
+    focus:1,
+    blur:.1,
+    speed:600
+});
+//对于只有一个属性的元素
+$('.single').objOpacity({
+    warp:false,
+    hover:'effect',
+    event:'click',
+    bevent:'mouseout',
+    focus:1,
+    blur:.1,
+    speed:600
+});
+</pre>
+    <script type="text/javascript">
+        window.prettyPrint && prettyPrint();
+        $(function(){
+            //对于有一堆相同属性的元素
+            $('.obj-opacity').objOpacity({
+                warp:'#warp',//如果不想使用事件代理,就不要使用这个参数,设置false
+                hover:'effect',
+                event:'mouseover',
+                bevent:'mouseout',
+                focus:1,
+                blur:.1,
+                speed:600
+            });
+
+            //对于只有一个属性的元素
+            $('.single').objOpacity({
+                hover:'effect',
+                event:'click',
+                bevent:'mouseout',
+                focus:1,
+                blur:.1,
+                speed:600
+            });
+        });
+    </script>
+</body>
+</html>
